@@ -1,0 +1,5 @@
+/home/hgoel/Documents/Kokoro/Kokoro.KSL/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/hgoel/Documents/Kokoro/Kokoro.KSL/bin/Debug/Kokoro.KSL.dll.mdb
+/home/hgoel/Documents/Kokoro/Kokoro.KSL/bin/Debug/Kokoro.KSL.dll
+/home/hgoel/Documents/Kokoro/Kokoro.KSL/obj/Debug/Kokoro.KSL.dll
+/home/hgoel/Documents/Kokoro/Kokoro.KSL/obj/Debug/Kokoro.KSL.dll.mdb

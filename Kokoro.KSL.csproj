@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2A4374B-97C9-4233-A071-BBE0126F74BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kokoro</RootNamespace>
+    <AssemblyName>Kokoro.KSL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;GLSL;PC</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;GLSL;PC</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GLSL\CodeGen.cs" />
+    <Compile Include="GLSL\PC\CodeGenerator.cs" />
+    <Compile Include="KSL\IKShaderProgram.cs" />
+    <Compile Include="KSL\Lib\General\Logic.cs" />
+    <Compile Include="KSL\Lib\General\StreamLocation.cs" />
+    <Compile Include="KSL\Lib\Manager.cs" />
+    <Compile Include="KSL\Lib\Math\KFloat.cs" />
+    <Compile Include="KSL\Lib\Math\KInt.cs" />
+    <Compile Include="KSL\Lib\Math\KMath.cs" />
+    <Compile Include="KSL\Lib\Math\Mat2.cs" />
+    <Compile Include="KSL\Lib\Math\Mat3.cs" />
+    <Compile Include="KSL\Lib\Math\Mat4.cs" />
+    <Compile Include="KSL\Lib\Math\Vec2.cs" />
+    <Compile Include="KSL\Lib\Math\Vec3.cs" />
+    <Compile Include="KSL\Lib\Math\Vec4.cs" />
+    <Compile Include="KSL\Lib\Obj.cs" />
+    <Compile Include="KSL\Lib\Texture\Sampler1D.cs" />
+    <Compile Include="KSL\Lib\Texture\Sampler2D.cs" />
+    <Compile Include="KSL\Lib\Texture\Sampler3D.cs" />
+    <Compile Include="KSL\Lib\Texture\Texture.cs" />
+    <Compile Include="KSL\SyntaxTree.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="KSL\KParams.cs" />
+    <Compile Include="KSL\KSLCompiler.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

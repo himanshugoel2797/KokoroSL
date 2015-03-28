@@ -1,0 +1,3 @@
+C:\Users\Himanshu\documents\visual studio 2013\Projects\Kokoro\Kokoro.KSL\bin\Release\Kokoro.KSL.dll
+C:\Users\Himanshu\documents\visual studio 2013\Projects\Kokoro\Kokoro.KSL\obj\Release\Kokoro.KSL.csprojResolveAssemblyReference.cache
+C:\Users\Himanshu\documents\visual studio 2013\Projects\Kokoro\Kokoro.KSL\obj\Release\Kokoro.KSL.dll
